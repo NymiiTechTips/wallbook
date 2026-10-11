@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Wallbook</title>
+  </head>
+  <body>
+    <main class="app-shell" aria-label="Sélecteur de wallpaper">
+      <aside class="left-rail" aria-label="Sélection de wallpaper">
+        <div id="leftRail" class="left-rail-inner"></div>
+      </aside>
+
+      <section class="shelf" aria-live="polite">
+        <div id="wallpaperShelf" class="wallpaper-shelf"></div>
+      </section>
+
+      <footer class="controls">
+        <span id="statusText">Wallpaper prêt</span>
+        <button id="selectBtn" class="select-btn" type="button"></button>
+      </footer>
+    </main>
+
+    <script src="renderer.js"></script>
+    
+  </body>
+</html>
